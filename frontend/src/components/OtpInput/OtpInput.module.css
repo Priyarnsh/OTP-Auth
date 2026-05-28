@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.digit {
+  width: 50px;
+  height: 58px;
+  text-align: center;
+  font-family: 'Inter', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-input);
+  border: 1.5px solid var(--border-input);
+  border-radius: var(--r-md);
+  outline: none;
+  transition: all var(--transition);
+  caret-color: var(--accent);
+}
+
+.digit::placeholder {
+  color: rgba(255, 255, 255, 0.08);
+  font-weight: 300;
+}
+
+.digit:focus {
+  border-color: var(--accent);
+  background: var(--bg-input-focus);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+.filled {
+  border-color: var(--accent-soft);
+  background: var(--accent-muted);
+}
+
+.error {
+  border-color: var(--error) !important;
+  animation: shake 0.35s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+
+@media (max-width: 420px) {
+  .digit { width: 42px; height: 50px; font-size: 18px; }
+  .container { gap: 7px; }
+}
