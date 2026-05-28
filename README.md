@@ -384,22 +384,6 @@ erDiagram
     USER ||--o{ REFRESH_TOKEN : "has many"
 ```
 
----
-
-## 🏭 Production Checklist
-
-- [ ] Replace JWT secrets with strong random strings
-- [ ] Set `NODE_ENV=production`
-- [ ] Configure Resend API key & verified domain
-- [ ] Configure Twilio credentials & phone number
-- [ ] Use MongoDB Atlas or managed MongoDB
-- [ ] Use Upstash Redis or managed Redis
-- [ ] Set `CORS origin` to your production domain
-- [ ] Enable HTTPS (reverse proxy: Nginx/Caddy)
-- [ ] Set up log aggregation (Winston/Pino)
-- [ ] Add health check monitoring
-
----
 
 <p align="center">
   <sub>Built with ❤️ and lots of ☕</sub>
