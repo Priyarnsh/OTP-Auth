@@ -43,7 +43,7 @@ export async function sendOtpEmail(to, otp) {
               <tr>
                 <td align="center" style="padding-bottom: 32px;">
                   <div style="background-color: rgba(255, 255, 255, 0.04); border: 1px solid rgba(249, 115, 22, 0.2); border-radius: 8px; padding: 16px 24px; display: inline-block;">
-                    <span style="font-size: 32px; font-weight: 600; letter-spacing: 8px; color: #f97316; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; user-select: all;">\${otp}</span>
+                    <span style="font-size: 32px; font-weight: 600; letter-spacing: 8px; color: #f97316; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; user-select: all;">${otp}</span>
                   </div>
                   <div style="margin-top: 12px;">
                     <span style="font-size: 12px; color: #78716c; background-color: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 4px;">Double-click code to copy</span>
