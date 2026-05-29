@@ -10,7 +10,7 @@ import env from "../config/env.js";
  */
 
 const OTP_PREFIX = "otp";
-const COOLDOWN_SECONDS = 60; // 1 minute between OTP requests
+const COOLDOWN_SECONDS = 300; // 5 minutes between OTP requests
 
 /**
  * Generate a cryptographically secure numeric OTP.
