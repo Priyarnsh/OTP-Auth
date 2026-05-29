@@ -6,9 +6,17 @@ import app from "../app.js";
 let isDbConnected = false;
 
 export default async function handler(req, res) {
-  if (!isDbConnected) {
-    await connectDB();
-    isDbConnected = true;
+  try {
+    if (!isDbConnected) {
+      await connectDB();
+      isDbConnected = true;
+    }
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Vercel Backend Error: Database connection failed. You likely forgot to add DATABASE_URL in Vercel Environment Variables.",
+      error: error.message
+    });
   }
   
   // Let Express handle the request
