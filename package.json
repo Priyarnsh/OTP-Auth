@@ -1,0 +1,8 @@
+{
+  "name": "otp-auth-workspace",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
